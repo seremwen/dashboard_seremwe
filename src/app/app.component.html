@@ -202,10 +202,16 @@
           <div class="col-xl-8">
             <div class="card m-b-30">
               <div class="card-body">
+                <agm-map [latitude]="lat" [longitude]="lng">
+                  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+<!--                <agm-map [latitude]="lat" [longitude]="lng">-->
+<!--                  <agm-marker *ngFor="let loc of locations" [latitude]="loc.location.latitude" [longitude]="loc.location.longitude" [label]="loc.name" ></agm-marker>-->
+<!--                </agm-map>-->
 
-                <h4 class="mt-0 header-title mb-4">Area Chart</h4>
+<!--                <h4 class="mt-0 header-title mb-4">Area Chart</h4>-->
 
-                <div id="morris-area-example" class="morris-charts morris-chart-height"></div>
+<!--                <div id="morris-area-example" class="morris-charts morris-chart-height"></div>-->
 
               </div>
             </div>
