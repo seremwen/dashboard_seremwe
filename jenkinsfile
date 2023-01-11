@@ -6,10 +6,13 @@ pipeline {
 
 
 stages {
-        stage('build') {
+        stage('install') {
             steps {
-                echo "Hello World!"
+                 sh "npm install"
             }
+        }
+         stage("Build"){
+                sh "npm run serve"
         }
     }
 }
