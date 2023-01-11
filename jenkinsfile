@@ -1,12 +1,16 @@
-node {
-   agent any
-   tools {nodejs "NODEJS"}
 
-  stage ('install node modules'){
-        sh "npm install --force"
-  }
-  stage ('Build'){
-         sh "npm run serve"
-  }
+// This shows a simple example of how to archive the build output artifacts.
+node {
+        agent any
+        tools {nodejs "NODEJS"}
+
+
+
+        stage('Install node modules'){
+                sh "npm install"
+        }
+        stage('Build'){
+                sh "npm run serve"
+        }
 
 }
