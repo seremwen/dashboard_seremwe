@@ -18,7 +18,7 @@ stages {
         }
           stage("Deploy"){
            steps{
-                bat '''xcopy /s /y /e /t "C:/ProgramData/Jenkins/.jenkins/workspace/Pipeline@2/dist/dashboard_seremwe" "C:/Projects/pipe"'''
+                bat '''xcopy /s /h /e /k /f /c /y "C:/ProgramData/Jenkins/.jenkins/workspace/Pipeline@2/dist/dashboard_seremwe" "C:/Projects/pipe"'''
            }
         }
     }
