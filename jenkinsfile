@@ -6,10 +6,10 @@ node {
 
 
 
-        stage('Install node modules'){
+        stage("Install node modules"){
                 sh "npm install"
         }
-        stage('Build'){
+        stage("Build"){
                 sh "npm run serve"
         }
 
