@@ -13,7 +13,13 @@ stages {
         }
          stage("Build"){
            steps{
-                sh "npm run ng serve"
+                sh "npm run ng build"
+           }
+        }
+          stage("Deploy"){
+           steps{
+                sh "xcopy "C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline\dist\dashboard_seremwe" "C:\Projects\Telone_Aggregator_insurance\QA_ENVI\pipe""
+               
            }
         }
     }
