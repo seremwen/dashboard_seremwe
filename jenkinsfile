@@ -1,9 +1,11 @@
-node {
+pipeline {
+   tools {nodejs "NODEJS"}
+   
   stage ('install node modules'){
         sh "npm install --force"
   }
   stage ('Build'){
          sh "npm run serve"
   }
-  tools {nodejs "NODEJS"}
+  
 }
