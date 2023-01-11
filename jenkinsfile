@@ -18,8 +18,8 @@ stages {
         }
           stage("Deploy"){
            steps{
-                sh "xcopy "C:\ProgramData\Jenkins\.jenkins\workspace\Pipeline\dist\dashboard_seremwe" "C:\Projects\Telone_Aggregator_insurance\QA_ENVI\pipe""
-               
+                sh "xcopy "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipeline\\dist\\dashboard_seremwe" "C:\\Projects\\Telone_Aggregator_insurance\\QA_ENVI\\pipe""
+
            }
         }
     }
