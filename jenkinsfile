@@ -13,7 +13,7 @@ stages {
         }
          stage("Build"){
            steps{
-                sh "npm start --port 8095"
+                sh "ng serve --port 8095"
            }
         }
     }
