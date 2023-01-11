@@ -5,12 +5,13 @@ pipeline {
         tools {nodejs "NODEJS"}
 
 
-
-        stage("Install node modules"){
-                sh "npm install"
+stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
         }
-        stage("Build"){
-                sh "npm run serve"
-        }
+    }
+}
 
 }
