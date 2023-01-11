@@ -1,0 +1,9 @@
+node {
+  stage ('install node modules'){
+        sh "npm install"
+  }
+  stage ('Build'){
+         sh "npm run serve"
+  }
+  tools {nodejs "NODEJS"}
+}
