@@ -1,6 +1,6 @@
 pipeline {
-  agent any
-  tools {nodejs "NODEJS"}
+   agent any
+   tools {nodejs "NODEJS"}
 
   stage ('install node modules'){
         sh "npm install --force"
