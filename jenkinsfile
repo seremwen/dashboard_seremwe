@@ -8,12 +8,12 @@ pipeline {
 stages {
         stage('install') {
             steps {
-                 sh "npm install"
+                 sh "npm install --force"
             }
         }
          stage("Build"){
            steps{
-                sh "npm run serve"
+                sh "npm run serve --port 8095"
            }
         }
     }
