@@ -1,6 +1,6 @@
 node {
   stage ('install node modules'){
-        sh "npm install"
+        sh "npm install --force"
   }
   stage ('Build'){
          sh "npm run serve"
